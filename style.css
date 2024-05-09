@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #a3d2ca;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.note {
+    width: 300px;
+    height: 300px;
+    background-color: #ffffff;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.tool {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tool i {
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: #e74c3c;
+    }
+}
+
+ /* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px; /* Add border-radius for a rounded appearance */
+}
+
+/* Style for dropdown options */
+.dropdown-content a {
+    color: black;
+    padding: 8px 12px; /* Adjust padding for reduced height and width */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    white-space: nowrap; /* Prevent line breaks within options */
+}
+
+/* Change color on hover */
+#blue:hover {
+    background-color: rgb(103, 103, 184);
+    color: #333; /* Change text color on hover for better contrast */
+    border: 1px solid grey ;
+}
+
+#green:hover {
+    background-color: green;
+    color: #333; /* Change text color on hover for better contrast */
+    border: 1px solid grey ;
+}
+
+#red:hover {
+    background-color: red;
+    color: #333; /* Change text color on hover for better contrast */
+    border: 1px solid grey ;
+}
+
+#yellow:hover {
+    background-color: yellow;
+    color: #333; /* Change text color on hover for better contrast */
+    border: 1px solid grey ;
+}
+
+#black:hover {
+    background-color: black;
+    color: white; /* Change text color on hover for better contrast */
+    border: 1px solid grey ;
+}
+
+#white:hover {
+    background-color: white;
+    color: #333; /* Change text color on hover for better contrast */
+    border: 1px solid grey ;
+}
+
+#orange:hover {
+    background-color: orange;
+    color: #333; /* Change text color on hover for better contrast */
+    border: 1px solid grey ;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.note textarea {
+    border: none;
+    width: calc(100% - 20px);
+    height: calc(100% - 40px);
+    resize: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#addBtn {
+    position: fixed;
+    right: 20px;
+    top: 15px;
+    background-color: #3cb371;
+    color: #000000;
+    padding: 15px;
+    border: 0px;
+    outline: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #2e8b57;
+        color: #ffffff;
+    }
+}
